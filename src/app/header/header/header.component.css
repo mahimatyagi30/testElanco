@@ -1,0 +1,36 @@
+.header {
+    color: white;
+    box-shadow: 5px 10px #0C2D48;
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-width: 200px;
+    height:50px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: #2E8BC0;
+    transform-origin: bottom left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(1deg, 0deg);
+  }
+
+  .pages{
+    padding-top:25px;
+    padding-right: 5px;
+    cursor: pointer;
+  }
+
+  nav {
+    padding-top: 16px;
+    padding-left: 175px;
+}
+
+a.pageHome {
+    text-decoration: underline;
+    font-size: 43px;
+    margin-right: 21px;
+    margin-left: -149px;
+}

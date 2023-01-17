@@ -1,0 +1,12 @@
+.resourcesPage{
+    
+    margin-left: 9px;
+    margin-top: 84px;
+    margin-bottom: 5px;
+}
+
+output.resName {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+}

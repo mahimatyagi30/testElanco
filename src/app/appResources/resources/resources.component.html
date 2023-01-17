@@ -1,0 +1,15 @@
+<div class="resourcesPage">
+    <output class="resName"> Resource Name: </output>
+    <select #sel2 name="res" (change)="changed(sel2.value)" class="rounded-inputs20 select-select col-md-3">
+        <option class="dropdown-item" disabled selected value="undefined">Select a Rescource Name</option>
+        <option *ngFor="let res of resources" [value]="res">{{res}}</option>
+
+    </select>
+
+
+</div>
+<ag-grid-angular *ngIf="onChangeEvent"
+    style="width: 100%; height: 70%;margin-top: 25px;padding-left: 5px;padding-right: 5px;" class="ag-theme-alpine"
+    [columnDefs]="columnDefs" [rowData]="rowData" autoSizeColumns=true [pagination]=true [defaultColDef]="defaultColDef"
+    (gridReady)="onGridReady($event)" (modelUpdated)="modelUpdated($event)"
+    (firstDataRendered)="onFirstDataRendered($event)" suppressSizeToFit=true></ag-grid-angular>
